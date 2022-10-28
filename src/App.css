@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: rgba(236, 236, 227, 0.623);*/
+  padding-bottom: 3rem;
+}
+
+Header{
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-size: 1.6rem;
+  color: grey;
+  margin:auto;
+  border-bottom:1px solid grey ;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+span{
+  color: rgba(255, 0, 0, 0.466);
+}
+
+.hero{
+  border-left: 1px solid  grey;
+  width: 70%;
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.hero-p{ 
+  color: white;
+  background-color:slateblue;
+  /*background-color: rgb(78, 138, 194);*/
+  font-size: .7rem;
+  padding: 10px;
+  width: 40%;
+  border-radius: 12px;
+  line-height: 18px;
+}
+
+.hero_img{
+  
+  width: 27%;
+
+}
+p{
+ 
+  text-align: center;
+  font-size: 1.4rem;
+  color: grey ;
+  margin-bottom: 2rem;
+}
+.About{
+font-size:.9rem ;
+width: 40%;
+margin: auto;
+}
+
+button{
+  
+  font-weight: bold;
+  color: white;
+  background-color: slateblue;
+  height: 45px;
+  width: 7rem;
+  border-radius: 8px;
+  border: none;
+  margin-top: 2rem;
+
+}
+.stretches{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+ padding: 30px;
+ color: grey;
+ border-right:1px solid grey ;
+ border-bottom:1px solid grey;
+
+}
+.stretch_img{
+  width: 40%;
+ 
+
+}
+.stretch-name{
+  font-size:1.5rem ;
+  color: grey;
+  margin-bottom: 1rem;
+  
+}
+.stretchContent-box{
+  padding: 12px;
+  border-radius:12px ;
+border: 2px solid gainsboro;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 55%;
+margin-bottom: 3rem;
+}
+
+.stretchContent-img{
+max-width: 65%;
+height: 12rem;
+
+}
+.Description{
+  display: initial;
+  text-align: center;
+  width: 50%;
+  color: grey;
+  font-size: 1.1rem;
+  
+  
+}
+
+.container{
+  
+   display: flex ;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.steps{
+  width: 55%;
+}
+
+ .steps ol   {
+  
+  margin: 1rem;
+  color: grey;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  
+}
+
+
+ol li{
+  margin: 1rem;
+  line-height: 2rem;
+  font-size: .9rem;
+}
+
+
+
+@media (max-width:781px){
+  
+ 
+  .steps{
+    width: 70%;
+  }
+
+} 
+
+@media (max-width:660px){
+  .Description{
+display: none;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero p {
+    width: 60%;
+  }
+  
+} 
+
+
+@media (max-width:461px){
+  
+ 
+  .steps{
+    width: 100%;
+  }
+
+} 
+@media (max-width:414px){
+  
+  .stretch-to-success{
+    font-size: 1rem;
+    
+  }
+    
+} 
+.stretch-to-success{
+  
+  font-weight: 600;
+}
+
+@media (max-width:351px){
+  
+  .stretchContent-box{
+    width:60% ;
+    }
+    
+} 
