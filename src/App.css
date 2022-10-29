@@ -18,24 +18,33 @@ Header{
   font-size: 1.6rem;
   color: grey;
   margin:auto;
-  border-bottom:1px solid grey ;
+  border-bottom:1px solid rgba(128, 128, 128, 0.486) ;
   width: 70%;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4.5rem;
   font-weight: bold;
 }
 span{
   color: rgba(255, 0, 0, 0.466);
 }
 
+.container{
+
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 .hero{
-  border-left: 1px solid  grey;
+  border-left: 1px solid  rgba(128, 128, 128, 0.425);
   width: 70%;
   height: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  box-shadow:  -10px -9px 11px rgba(128, 128, 128, 0.164), 10px 9px 11px rgba(128, 128, 128, 0.164);
 }
 
 .hero-p{ 
@@ -47,6 +56,8 @@ span{
   width: 40%;
   border-radius: 12px;
   line-height: 18px;
+  animation: slideIn ease-out .5s;
+
 }
 
 .hero_img{
@@ -62,9 +73,10 @@ p{
   margin-bottom: 2rem;
 }
 .About{
-font-size:.9rem ;
+font-size:.78rem ;
 width: 40%;
 margin: auto;
+line-height: 22px;
 }
 
 button{
@@ -79,21 +91,30 @@ button{
   margin-top: 2rem;
 
 }
+
 .stretches{
   width: 70%;
   display: flex;
   justify-content: center;
  padding: 30px;
  color: grey;
- border-right:1px solid grey ;
- border-bottom:1px solid grey;
+ border-right: 1px solid rgba(128, 128, 128, 0.295);
+ box-shadow: 10px 9px 11px rgba(128, 128, 128, 0.24) ;
 
 }
 .stretch_img{
   width: 40%;
- 
+
 
 }
+.footer-line{
+  margin-top: 3rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.678);
+  padding: 1px;
+  width: 70%;
+
+}
+
 .stretch-name{
   font-size:1.5rem ;
   color: grey;
@@ -109,6 +130,9 @@ justify-content: space-around;
 align-items: center;
 width: 55%;
 margin-bottom: 3rem;
+animation: move 2.8s infinite;
+position: relative;
+box-shadow: 10px 9px 5px rgba(0, 0, 0, 0.144);
 }
 
 .stretchContent-img{
@@ -126,13 +150,7 @@ height: 12rem;
   
 }
 
-.container{
-  
-   display: flex ;
-   flex-direction: column;
-   align-items: center;
-   
-}
+
 .steps{
   width: 55%;
 }
@@ -147,6 +165,7 @@ height: 12rem;
   flex-direction: column;
   border-radius: 1rem;
   
+  
 }
 
 
@@ -155,8 +174,20 @@ ol li{
   line-height: 2rem;
   font-size: .9rem;
 }
+@keyframes slideIn{
+  0%{transform: skewX(53deg) translateX(500px);}
+  
+  100%{transform: skewX(0deg)}
+}
 
 
+
+
+@keyframes move{
+  0%{top:0px}
+  50%{top:20px}
+  100%{top:0px}
+}
 
 @media (max-width:781px){
   
@@ -178,6 +209,21 @@ display: none;
     width: 60%;
   }
   
+} 
+@media (max-width:498px){
+  .stretchContent-box{
+    width: 50%;
+    padding: 9px;
+  }
+  
+ 
+  .stretchContent-img{
+    width: 45%;
+    height: 7.7rem;
+    
+    }
+
+
 } 
 
 
@@ -204,8 +250,6 @@ display: none;
 
 @media (max-width:351px){
   
-  .stretchContent-box{
-    width:60% ;
-    }
+  
     
 } 

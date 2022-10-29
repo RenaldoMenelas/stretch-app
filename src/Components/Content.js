@@ -31,12 +31,10 @@ const Content = () => {
    <button onClick={click} >Press & Stretch</button> 
       
       <div className="stretches">
-        <img className="stretch_img" src={ Image}/>
-        <div className="stretch-description">
-          <p></p>
-        
+          <img className="stretch_img" src={Image} />
         </div>
-        </div>
+
+        <div className="footer-line"></div>
         </div>: <StretchContent/>}
      
         </>
