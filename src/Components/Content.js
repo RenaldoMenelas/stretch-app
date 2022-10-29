@@ -1,11 +1,14 @@
 import React from 'react'
 import Image from '../leg-stretching.png'
 import StretchContent from '../StretchContent'
-import { useState } from 'react'
+import { useState ,useEffect} from 'react'
 import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 
 
 const Content = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const [clicked, setClicked] = useState(false)
 
   const click = () => {
@@ -28,7 +31,7 @@ const Content = () => {
       <p className="stretch-to-success" > Stretch Your Way To Success</p>
 
       <p className="About">Provides you with top Stretches to fully lengthen and promote muscle strength and flexibility </p>
-   <button onClick={click} >Press & Stretch</button> 
+   <button  onClick={click} >Press & Stretch</button> 
       
       <div className="stretches">
           <img className="stretch_img" src={Image} />

@@ -9,6 +9,10 @@ let i = 0
 let id = 0
 const StretchContent = () => {
     useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+    useEffect(() => {
         Aos.init({duration:2000})
     },[])
  
@@ -25,7 +29,7 @@ const StretchContent = () => {
              <div className="stretch-name">{stretchData[0].name}</div>
             <div data-aos="fade-up" className="stretchContent-box">
                 <img className="stretchContent-img" src={stretchData[0].img} />
-                <div className="Description">Cobra Stretch</div>
+                <div className="Description">Lunging Calf Stretch</div>
                  {/*under write benefits and body part it strecthes best known and used for*/}
             </div>
 
