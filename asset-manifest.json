@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/stretch-app/static/css/main.c8588818.css",
-    "main.js": "/stretch-app/static/js/main.3f39882d.js",
+    "main.js": "/stretch-app/static/js/main.e1b0d47f.js",
     "static/media/leg-stretching.png": "/stretch-app/static/media/leg-stretching.225332e2baed9511cff6.png",
     "index.html": "/stretch-app/index.html",
     "main.c8588818.css.map": "/stretch-app/static/css/main.c8588818.css.map",
-    "main.3f39882d.js.map": "/stretch-app/static/js/main.3f39882d.js.map"
+    "main.e1b0d47f.js.map": "/stretch-app/static/js/main.e1b0d47f.js.map"
   },
   "entrypoints": [
     "static/css/main.c8588818.css",
-    "static/js/main.3f39882d.js"
+    "static/js/main.e1b0d47f.js"
   ]
 }
