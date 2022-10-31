@@ -1,5 +1,4 @@
 import Image from './leg-stretching.png'
-
 import LungGif from './lunging-calf-stretch.gif'
 
 
@@ -16,7 +15,7 @@ export const stretchData = [
     {
         id: 2,
         name: "Cobra Stretch",
-        img: "./img.png",
+        img: Image,
         description:""
 
     },
