@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from '../leg-stretching.png'
+import GroupStretch from '../GroupStretch.jpeg'
 import StretchContent from '../StretchContent'
 import { useState ,useEffect} from 'react'
 import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
 
-
+let index = 0
 const Content = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -15,7 +16,9 @@ const Content = () => {
    
     setClicked(current => !current)
     console.log(clicked)
+   
   }
+
   
   return (
     
@@ -34,7 +37,7 @@ const Content = () => {
    <button  onClick={click} >Press & Stretch</button> 
       
       <div className="stretches">
-          <img className="stretch_img" src={Image} />
+          <img className="stretch_img" src={GroupStretch} />
         </div>
 
         <div className="footer-line"></div>
