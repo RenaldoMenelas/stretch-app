@@ -4,7 +4,7 @@ const Header = () => {
     return (
     
      <header>
-       Press <span>&</span> Stretch
+     <a href="./Content">Press <span>&</span> Stretch</a>  
       </header>  
     
     )

@@ -1,73 +1,82 @@
 import React from 'react'
 import { stretchData } from './data'
-import JsonData from './data.json'
 import { useState, useEffect } from 'react'
-import { Motion } from 'framer-motion'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
+let random = stretchData[Math.floor(Math.random()*stretchData.length)]
+
 let index = 0
 let count = 1
-let i = 0
-let id = 0
 const StretchContent = () => {
 
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        AOS.init({duration:2000})
       }, [])
 
-    useEffect(() => {
-        AOS.init({duration:2000})
-    },[])
- 
-    const [nextStretch, setNextStretch] = useState(stretchData[0])
-    const click = () => {
-        setNextStretch(nextStretch + 1)
-        console.log(stretchData[i++].name)
-        console.log(nextStretch[i++])
-        console.log(i)
-        index++
-        count++
-        console.log(index)
+  
+    const [button, setButton] = useState(stretchData[0].noBackButton)
+    const [nextStretch, setNextStretch] = useState(stretchData[index])
+    
+    const nextClick = () => {
+        setNextStretch(stretchData[index += 1])
         window.scrollTo(0, 0)
-        AOS.refreshHard()
-        
-        
-        return (
-            <>
-                <StretchContent/>
-                </>
-            )
+        console.log(stretchData[index])
+        setButton(!button)
+        //console.log(stretchData.description)
+        setButton(false)
+        console.log(nextStretch)
        
     }
+   
+
+   // console.log(nextStretch)
+
+    const backClick = () => {
+        setNextStretch(stretchData[index -=1])
+        console.log(setNextStretch) 
+        console.log(stretchData[index])
+        window.scrollTo(0, 0)
+     
+        
+     
+    }
+    console.log(index)
+
+  
+
+   //console.log(nextStretch.name)
+        
 
     return (
-        <>
-            {stretchData.slice(index,count).map(data => {
-                return (
-                    <>
-                       <div className="stretch-name" key={id}>{data.name}</div>
+        <>     
+           <div className="stretch-name" key={nextStretch.id}>{nextStretch.name}</div>
             <div data-aos="fade-up" className="stretchContent-box">
-                <img className="stretchContent-img" src={data.img} />
-                <div className="Description">{data.name} Stretch</div>
+                <img className="stretchContent-img" src={nextStretch.img} />
+         
+                <div className="Description">{nextStretch.name} Stretch</div>
+
+                
                  {/*under write benefits and body part it strecthes best known and used for*/}
             </div>
 
             <div className="steps">
                 <ol>
-                    <li data-aos="fade-zoom-in">Lay flat on your back with your arms out stretched Lift one leg up and across the body, bringing the knee up to the level of the hips. </li>
-                    <li data-aos="fade-down" >Lay flat on your back with your arms out stretched Lift one leg up and across the body, bringing the knee up to the level of the hips.</li>
-                    <li data-aos="fade-down">Lay flat on your back with your arms out stretched Lift one leg up and across the body, bringing the knee up to the level of the hips.</li>
-                    <li data-aos="fade-sown" >Lay flat on your back with your arms out stretched Lift one leg up and across the body, bringing the knee up to the level of the hips.</li>
-             </ol>
+                                <li>{nextStretch.description[0]} </li>
+                                <li data-aos="fade-zoom-in">{nextStretch.description[1]} </li>
+                                <li data-aos="fade-zoom-in">{nextStretch.description[2]} </li>
+                                <li data-aos="fade-zoom-in">{nextStretch.description[3]} </li>
+                                <li data-aos="fade-zoom-in">{nextStretch.description[4]} </li>
+                   
+              
+              </ol>
             </div>
-           
-           <button onClick={click}>Next</button>
-            
-      
-                </>    
-                )
-           })}
+            <div className="buttons">
+                 {!stretchData[index].noBackButton ? <button onClick={backClick}>Back</button> : null}
+                <button onClick={nextClick}>Next</button>
+                 
+            </div>
             
         </>
     )
