@@ -1,20 +1,25 @@
 {
   "files": {
     "main.css": "/stretch-app/static/css/main.69c3ae73.css",
-    "main.js": "/stretch-app/static/js/main.c102db21.js",
+    "main.js": "/stretch-app/static/js/main.8ff4bebf.js",
     "static/media/lunging-calf-stretch.gif": "/stretch-app/static/media/lunging-calf-stretch.77de1b8b277a6dc4dfe6.gif",
     "static/media/GroupStretch.jpeg": "/stretch-app/static/media/GroupStretch.08171a958a0f01998a10.jpeg",
+    "static/media/CatCow.jpeg": "/stretch-app/static/media/CatCow.7f851ea0e41e4e7b4d8b.jpeg",
     "static/media/ToeTouches.jpeg": "/stretch-app/static/media/ToeTouches.9986af4e3081f70baafd.jpeg",
     "static/media/SpinalTwist.jpeg": "/stretch-app/static/media/SpinalTwist.f18d6cb4de7971abe5ea.jpeg",
+    "static/media/FigureFour.jpeg": "/stretch-app/static/media/FigureFour.78fc993c62548321f4a6.jpeg",
+    "static/media/Warrior I pose.jpeg": "/stretch-app/static/media/Warrior I pose.76d616613c2b9d55708d.jpeg",
     "static/media/leg-stretching.png": "/stretch-app/static/media/leg-stretching.225332e2baed9511cff6.png",
     "static/media/CobraStretch.jpeg": "/stretch-app/static/media/CobraStretch.dc4d0efaf61a86d3c30e.jpeg",
+    "static/media/CamelPose.jpeg": "/stretch-app/static/media/CamelPose.cfb1871bdf32c44f1ba3.jpeg",
     "static/media/ChildsPose.jpeg": "/stretch-app/static/media/ChildsPose.ad4e728809a68cf5ce55.jpeg",
+    "static/media/RaisedArms.jpeg": "/stretch-app/static/media/RaisedArms.0a4866cb8b06c23e778b.jpeg",
     "index.html": "/stretch-app/index.html",
     "main.69c3ae73.css.map": "/stretch-app/static/css/main.69c3ae73.css.map",
-    "main.c102db21.js.map": "/stretch-app/static/js/main.c102db21.js.map"
+    "main.8ff4bebf.js.map": "/stretch-app/static/js/main.8ff4bebf.js.map"
   },
   "entrypoints": [
     "static/css/main.69c3ae73.css",
-    "static/js/main.c102db21.js"
+    "static/js/main.8ff4bebf.js"
   ]
 }
