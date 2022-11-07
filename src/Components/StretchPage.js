@@ -1,12 +1,11 @@
 import React from 'react'
-import { stretchData } from './data'
+import { stretchData } from '../data'
 import { useState, useEffect } from 'react'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
 let random = stretchData[Math.floor(Math.random()*stretchData.length)]
-
 let index = 0
-let count = 1
+
 const StretchContent = () => {
 
 
@@ -16,16 +15,13 @@ const StretchContent = () => {
       }, [])
 
   
-    const [button, setButton] = useState(stretchData[0].noBackButton)
+   
     const [nextStretch, setNextStretch] = useState(stretchData[index])
     
     const nextClick = () => {
         setNextStretch(stretchData[index += 1])
         window.scrollTo(0, 0)
         console.log(stretchData[index])
-        setButton(!button)
-        //console.log(stretchData.description)
-        setButton(false)
         console.log(nextStretch)
        
     }
