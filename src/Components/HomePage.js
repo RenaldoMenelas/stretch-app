@@ -1,15 +1,15 @@
 import React from 'react'
-import Image from '../leg-stretching.png'
-import GroupStretch from '../GroupStretch.jpeg'
-import StretchContent from '../StretchContent'
-import { useState ,useEffect} from 'react'
-import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
+import Image from '../Images/leg-stretching.png'
+import GroupStretch from '../Images/GroupStretch.jpeg'
+import StretchContent from './StretchPage'
+import { useState, useEffect } from 'react'
 
-let index = 0
-const Content = () => {
+const HomePage = () => {
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  
   const [clicked, setClicked] = useState(false)
 
   const click = () => {
@@ -48,4 +48,4 @@ const Content = () => {
     )
 }
 
-export default Content
+export default HomePage
