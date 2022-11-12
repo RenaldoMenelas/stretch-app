@@ -3,9 +3,12 @@ import { stretchData } from '../data'
 import { useState, useEffect } from 'react'
 import 'aos/dist/aos.css'
 import AOS from 'aos'
-let random = stretchData[Math.floor(Math.random()*stretchData.length)]
+let random = stretchData[Math.floor(Math.random() * stretchData.length)]
+//let randoms = stretchData.sort(()=> .5 - Math.random())
 let index = 0
-
+let count = 0
+console.log(stretchData.length)
+console.log(stretchData[0])
 const StretchContent = () => {
 
 
@@ -15,7 +18,7 @@ const StretchContent = () => {
       }, [])
 
   
-   
+  
     const [nextStretch, setNextStretch] = useState(stretchData[index])
     
     const nextClick = () => {
@@ -23,11 +26,10 @@ const StretchContent = () => {
         window.scrollTo(0, 0)
         console.log(stretchData[index])
         console.log(nextStretch)
-       
+       count++
     }
-   
 
-   // console.log(nextStretch)
+    console.log(count)
 
     const backClick = () => {
         setNextStretch(stretchData[index -=1])
@@ -35,13 +37,17 @@ const StretchContent = () => {
         console.log(stretchData[index])
         window.scrollTo(0, 0)
      
-        
+        count--
      
     }
+
+    const startOver = () => {
+        setNextStretch(stretchData[index -= count])
+        count = 0
+        window.scrollTo(0, 0)
+    }
     console.log(index)
-
-  
-
+    
    //console.log(nextStretch.name)
         
 
@@ -70,8 +76,7 @@ const StretchContent = () => {
             </div>
             <div className="buttons">
                  {!stretchData[index].noBackButton ? <button onClick={backClick}>Back</button> : null}
-                <button onClick={nextClick}>Next</button>
-                 
+               {stretchData[index].nextButton?  <button onClick={startOver} className='restart-btn'>Restart</button>: <button onClick={nextClick}>Next</button>}
             </div>
             
         </>
