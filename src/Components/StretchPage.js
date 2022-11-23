@@ -57,7 +57,7 @@ const StretchContent = () => {
             <div data-aos="fade-up" className="stretchContent-box">
                 <img className="stretchContent-img" src={nextStretch.img} />
          
-                <div className="Description">{nextStretch.name} Stretch</div>
+                {!stretchData[index].nextButton?<div className="Description">{nextStretch.name} Stretch </div> : <div className="Description">{nextStretch.name}</div> }
 
                 
                  {/*under write benefits and body part it strecthes best known and used for*/}

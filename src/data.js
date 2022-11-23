@@ -12,7 +12,9 @@ import CamelPose from './Images/CamelPose.jpeg'
 import Relaxing from './Images/Relaxing.jpeg'
 import singleLeg from './Images/singleLeg.jpeg'
 import wideLeggedForwardBend from './Images/wideLeggedForwardBend.jpeg'
-
+import StandingFold from './Images/StandingFold.jpeg'
+import UpwardSalute from './Images/UpwardSalute.jpeg'
+import HipLift from './Images/HipLift1.jpeg'
 
 export const stretchData = [
     {
@@ -65,7 +67,7 @@ export const stretchData = [
     },
     {
         id: 5,
-        name: "Toe Touches",
+        name: "Toe Touch",
         img: ToeTouches,
         description: ["Stand in a natural position with your feet hip-width apart.",
             "Move your hips slightly back and slide your arms down your thighs and shins, toward your feet.",
@@ -155,21 +157,44 @@ export const stretchData = [
        
     },
     {
-        id:12,
-        name: "Wide-Leg Forward Bend",
-        img: wideLeggedForwardBend,
+        id:13,
+        name: "Hip Lift",
+        img: HipLift,
+        description: ["Lie flat on your back with arms straight out.",
+            "Lift both knees up, while keeping your feet flat",
+            "Lift body while keeping hands and head flat on floor",
+            "Stay in position for 15 secs, repeat 2 times."
+        ]
+       
+    },
+    {
+        id:14,
+        name: "Standing Fold Pose",
+        img: StandingFold,
         description: ["Stand with your feet together. Bend your knees slightly and fold your torso over your legs, moving from the hips, not the lower back.",
-            "Place your hands next to your feet or on the ground in front of you.",
+            "Place your hands near the bak of your ankles, while kepping torso folded.",
+            "Hold this positon for 15 seconds",
+            "Repeat two times"
+        ]
+       
+    },
+    {
+        id:15,
+        name: "Upward Salute Pose",
+        img: UpwardSalute,
+        description: [" Stand up tall with your feet together, your spine long, and your arms by your sides.",
+            ". Rotate your arms so that the palms face away from the torso.",
+            " Inhale and bring your arms up and overhead.",
+            "Stay in position for 30 seconds to 1 minute."
         ]
        
     },
 
-
     {
-        id:13,
+        id:16,
         name: " Finished ",
         img: Relaxing,
-        description: ["!! Congrats Your all Done !!",
+        description: [" Congrats Your all Done !!",
         "You've completed all stretches","Press Restart to start again"],
         noBackButton: true,
         nextButton:true
