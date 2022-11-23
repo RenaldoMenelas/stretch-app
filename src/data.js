@@ -9,8 +9,12 @@ import FigureFour from './Images/FigureFour.jpeg'
 import RaisedArms from './Images/RaisedArms.jpeg'
 import CatCow from './Images/CatCow.jpeg'
 import CamelPose from './Images/CamelPose.jpeg'
-
-
+import Relaxing from './Images/Relaxing.jpeg'
+import singleLeg from './Images/singleLeg.jpeg'
+import wideLeggedForwardBend from './Images/wideLeggedForwardBend.jpeg'
+import StandingFold from './Images/StandingFold.jpeg'
+import UpwardSalute from './Images/UpwardSalute.jpeg'
+import HipLift from './Images/HipLift1.jpeg'
 
 export const stretchData = [
     {
@@ -63,13 +67,12 @@ export const stretchData = [
     },
     {
         id: 5,
-        name: "Toe Touches",
+        name: "Toe Touch",
         img: ToeTouches,
         description: ["Stand in a natural position with your feet hip-width apart.",
             "Move your hips slightly back and slide your arms down your thighs and shins, toward your feet.",
-            "Keeping your back straight, lower to the point of mild discomfort.",
-            "Hold the position for 15 seconds",
-            "Repeat the stretch 3 times as part of your stretching routine."
+            "Hold feet or ground in position for 15 seconds",
+            "Repeat 3 times."
 
        
         ]
@@ -79,8 +82,8 @@ export const stretchData = [
         id: 6,
         name: "Warrior I Pose",
         img: WarriorPose,
-        description: ["From a standing position, step your left foot to the back of your mat and lower the inside of your foot so that your back foot is at an angle.",
-            "Bend your right knee 90 degrees and straighten your back leg.",
+        description: ["Extend your right foot out, then twist that foot so that it's positioned is at an angle.",
+            "Bend your left knee 90 degrees and straighten your back leg.",
             "Reach arms overhead and keep torso facing the front.",
             "Relax shoulders and breathe gently in and out. Hold 30 seconds and switch sides."
         ]
@@ -112,10 +115,12 @@ export const stretchData = [
         id: 9,
         name: "Cat Cow",
         img: CatCow,
-        description: ["stand with your feet hip distance wide, Allowing your arms to hang by your sides ",
-            "inhale while Raising your arm towards the sky",
-            "Gently arch your back and gaze diagonally upwards",
-            "Hold for 10 seconds and repeat 3 times"
+        description: ["Begin on your hands and knees in table pose, with a neutral spine.",
+            "Inhale while slowly lifting head and mid upper back simultaneously,",
+            "Exhale while slowly bending head down and curving back, fully creating a rounded back",
+            " Hold each position for 10 secs, repeat set 3 times ",
+           
+
         ]
 
     },
@@ -130,15 +135,74 @@ export const stretchData = [
         ]
 
     },
+    {
+        id:11,
+        name: "Single Leg",
+        img: singleLeg,
+        description: ["Stand with all your weight in your riight foot.",
+        "Reach your torso forward as you lift your right leg behind you. Reach your arms overhead for balance as your torso and leg come parallel to the floor.",
+        "Hold this position for a moment, and reach through your right heel to engage the back of the right leg.",
+        "Hold Position for 10 secs",
+        "Do 3 times before switching sides; and do two to three reps."],
+       
+    },
+    {
+        id:12,
+        name: "Wide-Leg Forward Bend",
+        img: wideLeggedForwardBend,
+        description: ["Stand on your mat with your legs wide apart",
+        "Start to bend forward with a neutral spine",
+        "Halfway down when your back is close to flat, reach out your hands to the floor.",
+        "Hold position for 15 seconds, repeat 3 reps"],
+       
+    },
+    {
+        id:13,
+        name: "Hip Lift",
+        img: HipLift,
+        description: ["Lie flat on your back with arms straight out.",
+            "Lift both knees up, while keeping your feet flat",
+            "Lift body while keeping hands and head flat on floor",
+            "Stay in position for 15 secs, repeat 2 times."
+        ]
+       
+    },
+    {
+        id:14,
+        name: "Standing Fold Pose",
+        img: StandingFold,
+        description: ["Stand with your feet together. Bend your knees slightly and fold your torso over your legs, moving from the hips, not the lower back.",
+            "Place your hands near the bak of your ankles, while kepping torso folded.",
+            "Hold this positon for 15 seconds",
+            "Repeat two times"
+        ]
+       
+    },
+    {
+        id:15,
+        name: "Upward Salute Pose",
+        img: UpwardSalute,
+        description: [" Stand up tall with your feet together, your spine long, and your arms by your sides.",
+            ". Rotate your arms so that the palms face away from the torso.",
+            " Inhale and bring your arms up and overhead.",
+            "Stay in position for 30 seconds to 1 minute."
+        ]
+       
+    },
 
-
-    
+    {
+        id:16,
+        name: " Finished ",
+        img: Relaxing,
+        description: [" Congrats Your all Done !!",
+        "You've completed all stretches","Press Restart to start again"],
+        noBackButton: true,
+        nextButton:true
+    },
 
 
 
 ]
    
         
-
-
 

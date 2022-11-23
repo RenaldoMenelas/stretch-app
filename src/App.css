@@ -196,6 +196,12 @@ ol li{
   50%{top:20px}
   100%{top:0px}
 }
+.restart-btn{
+  animation: move 2.8s infinite;
+background-color: black;
+position: relative;
+}
+
 
 @media (max-width:781px){
   
@@ -235,7 +241,6 @@ ol li{
 
 
 } 
-
 
 @media (max-width:461px){
   
