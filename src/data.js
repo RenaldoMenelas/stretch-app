@@ -194,8 +194,8 @@ export const stretchData = [
         id:16,
         name: " Finished ",
         img: Relaxing,
-        description: ["Congrats Your all Done !!",
-        "You've completed all stretches","Press Restart to start again"],
+        description: ["Congratulations!!", "Your All Done",
+        "You've Completed All Stretches","Press Restart to start again"],
         noBackButton: true,
         nextButton:true
     },
