@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stretch-app/static/css/main.bf91884a.css",
-    "main.js": "/stretch-app/static/js/main.02f0d36d.js",
+    "main.js": "/stretch-app/static/js/main.b748b1f1.js",
     "static/media/lunging-calf-stretch.gif": "/stretch-app/static/media/lunging-calf-stretch.77de1b8b277a6dc4dfe6.gif",
     "static/media/Relaxing.jpeg": "/stretch-app/static/media/Relaxing.99373972402276cfd9fb.jpeg",
     "static/media/GroupStretch.jpeg": "/stretch-app/static/media/GroupStretch.08171a958a0f01998a10.jpeg",
@@ -22,10 +22,10 @@
     "static/media/RaisedArms.jpeg": "/stretch-app/static/media/RaisedArms.0a4866cb8b06c23e778b.jpeg",
     "index.html": "/stretch-app/index.html",
     "main.bf91884a.css.map": "/stretch-app/static/css/main.bf91884a.css.map",
-    "main.02f0d36d.js.map": "/stretch-app/static/js/main.02f0d36d.js.map"
+    "main.b748b1f1.js.map": "/stretch-app/static/js/main.b748b1f1.js.map"
   },
   "entrypoints": [
     "static/css/main.bf91884a.css",
-    "static/js/main.02f0d36d.js"
+    "static/js/main.b748b1f1.js"
   ]
 }
